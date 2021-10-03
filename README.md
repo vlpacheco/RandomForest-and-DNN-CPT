@@ -33,3 +33,8 @@ The work methodology followed the flowchart below. Thus, the database was subjec
 ![Alt Text](Figures/CPT_Fluxogram.png) 
 
 Still, the models were properly selected initially via Grid-Search. The optimization and validation of the model occurred through cross-validation in both methods: DLNN and RFR.
+
+## Metrics
+For this purpose, primary metrics were used in all steps of optimization, validation and comparison of the models.
+
+Metrics such as: Coeficient of determination (R2), mean ssquared error (MSE), root mean squared error (RMSE) and mean absolute error (MAE).
