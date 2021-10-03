@@ -14,8 +14,8 @@ With approximately 2 million observations and 30 usable features.
 Reference:
 Oberhollenzer, S., Premstaller, M., Marte, R., Tschuchnigg, F., Erharter, G.H., Marcher, T., 2021. Cone penetration test dataset Premstaller Geotechnik. Data in Brief 34, 106618. https://doi.org/10.1016/j.dib.2020.106618
 
-## Inputs
-Thus, the Deep Neural Network (DLNN) and Random Forest Regressor (RFR) models were estimated for the following inputs:
+## Inputs and Outputs
+Thus, the Deep Neural Network (DLNN) and Random Forest Regressor (RFR) models were estimated for the following inputs nad outputs:
 
 |Model|Input|Output|
 |---|--|------------------|
@@ -23,5 +23,13 @@ Thus, the Deep Neural Network (DLNN) and Random Forest Regressor (RFR) models we
 |Model 02|σ',v (kPa), SBT (-), SBTn (-), Mod. SBTn (-), ISO Classes|qc (MPa), fs (kPa)|
 |Model 03|SBT (-), SBTn (-), Mod. SBTn (-), ISO Classes|qc (MPa), fs (kPa)|
 |Model 04|SBT (-), SBTn (-), Mod. SBTn (-)|qc (MPa), fs (kPa)|
-|Model 05|SBT (-), SBTn (-), Mod. SBTn (-)|
-|Model 06|Depth (m), σ',v (kPa), SBT (-), SBTn (-), Mod. SBTn (-)|
+|Model 05|SBT (-), SBTn (-), Mod. SBTn (-)|qc (MPa), fs (kPa)|
+|Model 06|Depth (m), σ',v (kPa), SBT (-), SBTn (-), Mod. SBTn (-)|qc (MPa), fs (kPa)|
+
+
+## Methodology
+The work methodology followed the flowchart below. Thus, the database was subjected to several data processing steps. Pre-processing included the removal and regularization of variables, along with exploratory analysis of the variables of interest.
+
+![Alt Text](Figures/CPT_Fluxogram.png) 
+
+Still, the models were properly selected initially via Grid-Search. The optimization and validation of the model occurred through cross-validation in both methods: DLNN and RFR.
